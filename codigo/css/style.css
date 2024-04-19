@@ -1,0 +1,50 @@
+header {
+  background-color: rgba(253, 253, 253, 1);
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+  margin-right: 16px;
+  align-items: center;
+}
+
+header > .logo {
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+}
+
+header > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  /* background-color: rgba(156, 233, 166, 0.6); */
+  background-color: rgb(49 97 55 / 60%);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+  background: #ffffff;
+  margin-top: 102px;
+  border-radius: 10px;
+  width: 720px;
+  box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+}
+
+.main > article {
+  padding: 32px;
+}
