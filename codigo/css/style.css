@@ -37,6 +37,17 @@ body {
   font-style: normal;
 }
 
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 50px;
+}
+.title > img {
+  width: 360px;
+  height: 150px;
+}
+
 .main {
   background: #ffffff;
   margin-top: 102px;
@@ -47,4 +58,13 @@ body {
 
 .main > article {
   padding: 32px;
+}
+
+.sol {
+  width: 212px;
+}
+
+.painel {
+  width: 300px;
+  height: 300px;
 }
