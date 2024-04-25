@@ -10,11 +10,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="./imagens/icone.ico" />
     <title>Energia Solar no Vale do Paraiba</title>
   </head>
   <body>
     <header>
+      <nav>
+        <img class="logo" src="./imagens/eco-house.png" alt="" />
+        <div>
+          <hr id="line" style="left: 100%; opacity: 0" />
+          <button id="BtnInicio" name="btn" onclick="href('home.html', 'home')">
+            Inicio
+          </button>
+          <button id="BtnSobre" name="btn">
+            Sobre
+            <div id="ExtraSobre">
+              <a href="./pages/sobres/sobre.html">Sobre</a>
+              <a href="./pages/sobres/funcionamento.html">Como funciona</a>
+              <a href="./pages/sobres/beneficios.html">Beneficios</a>
+            </div>
+          </button>
+          <button
+            id="BtnFormulario"
+            name="btn"
+            onclick="href('pages/formulario.html' , 'formulario')"
+          >
+            Formulário
+          </button>
+          <button
+            id="BtnBibliografia"
+            name="btn"
+            onclick="href('pages/bibliografia.html' , 'bibliografia')"
+          >
+            Bibliografia
+          </button>
+          <button
+            id="BtnAlunos"
+            name="btn"
+            onclick="href('pages/alunos.html', 'alunos')"
+          >
+            Alunos
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <header>
       <img class="logo" src="./imagens/eco-house.png" alt="" />
       <ul>
         <li>
@@ -45,7 +87,7 @@
         </div>
         <section id="beneficios">
           <h2>1 Beneficios</h2>
-          <p>
+          <p class="conteudo">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             consectetur vel ante in vehicula. In dignissim ligula id sapien
             tincidunt eleifend. Curabitur maximus libero vitae nunc luctus
@@ -58,7 +100,7 @@
         <hr />
         <section id="funcionamento">
           <h2>2 Funcionamento</h2>
-          <p>
+          <p class="conteudo">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             consectetur vel ante in vehicula. In dignissim ligula id sapien
             tincidunt eleifend. Curabitur maximus libero vitae nunc luctus
@@ -72,7 +114,7 @@
         <hr />
         <section id="sobre">
           <h2>3 Sobre</h2>
-          <p>
+          <p class="conteudo">
             A energia Fotovoltaica também conhecida como energia solar
             Fotovoltaica, é a energia elétrica produzida a partir da luz solar,
             e pode ser gerada mesmo em dias nublados ou chuvosos, porém quanto
@@ -81,7 +123,7 @@
           </p>
           <br />
           <img class="sol" src="./videos/200w.gif" alt="" />
-          <p>
+          <p class="conteudo">
             <br />
             No Brasil as horas de sol é superior a 3000 horas por ano. é o páis
             com a maior taxa de irradiação solar do mundo! Isso se da por alguns
@@ -120,7 +162,7 @@
         <hr />
         <section id="formulario">
           <h2>4 Formulário</h2>
-          <p>
+          <p class="conteudo">
             Donec ut lorem leo. Cras dignissim est non dictum sagittis. Nulla in
             neque in velit aliquet interdum. Duis et est non enim imperdiet
             eleifend eget sit amet sem. Quisque convallis leo nec odio convallis
@@ -137,7 +179,7 @@
         <hr />
         <section id="alunos">
           <h2>5 Alunos</h2>
-          <p>
+          <p class="conteudo">
             Pellentesque et blandit ante. Aliquam commodo ut eros id suscipit.
             Vestibulum nisl urna, dignissim id sem consequat, pulvinar
             vestibulum enim. Mauris dapibus laoreet dolor, nec pulvinar arcu
@@ -154,7 +196,7 @@
         <hr />
         <section id="bibliografia">
           <h2>6 Bibliografia</h2>
-          <p>
+          <p class="conteudo">
             Ut non sem arcu. Pellentesque fringilla risus non sollicitudin
             accumsan. Orci varius natoque penatibus et magnis dis parturient
             montes, nascetur ridiculus mus. Cras mattis nunc pellentesque ex
@@ -167,6 +209,6 @@
           </p>
         </section>
       </article>
-    </div>
+    </div> -->
   </body>
 </html>
