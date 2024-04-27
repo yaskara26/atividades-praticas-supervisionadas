@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href=".././css/style.css" />
     <script src=".././js/script.js"></script>
-    <link rel="shortcut icon" type="imagex/png" href="./imagens/ico.ico" />
+    <link rel="shortcut icon" type="imagex/png" href="../imagens/ico.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap"
+      rel="stylesheet"
+    />
     <title>Formulario - Energia solar</title>
   </head>
   <body>
@@ -32,7 +38,7 @@
           <button
             id="BtnFormulario"
             name="btn"
-            onclick="href('formulario.html' , 'formulario')"
+            onclick="href('contato.html' , 'formulario')"
           >
             Formulário
           </button>
@@ -53,48 +59,45 @@
         </div>
       </nav>
     </header>
-    <main class="pages">
-      <h1>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap"
-          rel="stylesheet"
-        />Contato
-      </h1>
+    <main class="formulario">
+      <article>
+        <h1>Contato</h1>
+        <img
+          class="pages-img"
+          src="./../imagens/Fundo-Oeste-Solar-Vendas.jpg"
+        />
+        <p class="pages-texto">
+          Para sugestões ou informações sobre empresas que atuam no seu
+          munícipio, preencha os campos abaixo e nos envie uma mensagem!
+        </p>
+        <form>
+          <p>
+            <label
+              >Nome:
+              <input type="text" name="txtnome" size="50" maxlength="50" />
+            </label>
+          </p>
+          <p>
+            <label
+              >Telefone:
+              <input type="tel" placeholder="(XX)XXXXX-XXXX" />
+            </label>
+          </p>
+          <p>
+            <label
+              >E-mail:
+              <input type="email" required />
+            </label>
+          </p>
+          <label>
+            Deixe sua mensagem <br />
+            <textarea name="txtMensagem" rows="6" cols="55"> </textarea></label
+          ><br />
+          <input type="submit" value="Enviar" />
+        </form>
 
-      <img class="pages-img" src="./../imagens/Fundo-Oeste-Solar-Vendas.jpg" />
-      <p class="pages-texto">
-        Para sugestões ou informações sobre empresas que atuam no seu munícipio,
-        preencha os campos abaixo e nos envie uma mensagem!
-      </p>
-      <form>
-        <p>
-          <label
-            >Nome:
-            <input type="text" name="txtnome" size="50" maxlength="50" />
-          </label>
-        </p>
-        <p>
-          <label
-            >Telefone:
-            <input type="tel" placeholder="(XX)XXXXX-XXXX" />
-          </label>
-        </p>
-        <p>
-          <label
-            >E-mail:
-            <input type="email" required />
-          </label>
-        </p>
-        <label>
-          Deixe sua mensagem <br />
-          <textarea name="txtMensagem" rows="6" cols="55"> </textarea></label
-        ><br />
-        <input type="submit" value="Enviar" />
-      </form>
-
-      <div class="pages-texto-img"></div>
+        <div class="pages-texto-img"></div>
+      </article>
     </main>
   </body>
 </html>

@@ -7,6 +7,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 body {
@@ -58,6 +59,13 @@ button {
 }
 
 main {
+  background: #ffffff;
+  margin-top: 102px;
+  border-radius: 10px;
+  width: 720px;
+}
+
+main > article {
   padding: 32px;
 }
 
@@ -107,12 +115,16 @@ h1 {
   border-bottom: 3px solid rgba(160, 218, 168, 0.6);
 }
 
-.pages {
-  background: #ffffff;
-  margin-top: 102px;
-  border-radius: 10px;
-  width: 720px;
-  /* box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px; */
+main.inicio section {
+  text-align: justify;
+}
+
+main.inicio section:last-child {
+  display: flex;
+}
+
+main.beneficios > article section ul {
+  padding-right: 40px;
 }
 
 .pages-texto {
@@ -126,13 +138,14 @@ h1 {
 }
 
 .pages-img {
-  height: 250px;
+  /* height: 250px; */
+  max-width: -webkit-fill-available;
 }
 
 .pages-img-principal {
+  border-radius: 10px 10px 0 0;
   height: 460px;
-  display: flex;
-  margin-top: -40px;
+  /* display: flex; */
 }
 
 .pages-texto-img img {
@@ -184,16 +197,6 @@ h1 {
 
 /* teste vitoria */
 
-.pages-img {
-  height: 250px;
-}
-
-.pages-texto-img {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  grid-gap: 15px;
-}
 .pages-texto-img img {
   width: 250px;
 }
