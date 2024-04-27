@@ -1,50 +1,46 @@
-/* header {
-  background-color: rgba(253, 253, 253, 1);
-  display: flex;
-  position: fixed;
-  top: 0;
-  width: 100%;
-} */
-
 /* codigo rafael teste*/
-nav {
-  position: fixed;
-  height: 76px;
-  width: 100vw;
-  /* background-color: #000; */
+header {
   background-color: rgba(253, 253, 253, 1);
-  color: rgb(49 97 55 / 60%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-nav div {
-  height: 100%;
+body {
+  background-color: rgb(49 97 55 / 60%);
+  margin: auto;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  /* font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+}
+
+nav {
+  color: rgb(49 97 55 / 60%);
+  /* z-index: 2; */
+  display: flex;
   margin-right: 20px;
 }
-nav div button {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+nav button {
   padding-inline: 5px;
-  width: auto;
   background-color: transparent;
-  color: var(--NavTextColor);
+  color: inherit;
   border: none;
   border-bottom: 5px transparent solid;
   cursor: pointer;
   transition: 0.5s;
 }
-nav div button:hover {
+
+nav button:hover {
   color: rgba(19, 216, 45, 0.6);
 }
 
-nav div hr {
+nav hr {
   display: flex;
   position: absolute;
   top: 45px;
@@ -55,6 +51,24 @@ nav div hr {
   transition: 0.5s;
 }
 
+button {
+  list-style-type: none;
+  margin-right: 16px;
+  font-size: 22px;
+}
+
+main {
+  padding: 32px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
 #BtnSobre:hover > #ExtraSobre {
   opacity: 1;
   visibility: visible;
@@ -62,17 +76,18 @@ nav div hr {
 }
 
 #ExtraSobre {
+  border-radius: 4px;
   transition: 0.5s;
   opacity: 0;
-  width: 80px;
   height: auto;
-  margin: 10px;
+  padding: 8px;
   position: absolute;
   top: 50px;
   display: flex;
   flex-direction: column;
   background-color: rgba(253, 253, 253, 1);
   grid-gap: 5px;
+  font-size: 20px;
 }
 #ExtraSobre a {
   text-decoration: none;
@@ -82,7 +97,7 @@ nav div hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 5px solid transparent;
+  border-bottom: 10px solid transparent;
 }
 #ExtraSobre :hover {
   transition: 0.5s;
@@ -92,47 +107,53 @@ nav div hr {
   border-bottom: 3px solid rgba(160, 218, 168, 0.6);
 }
 
-/* fim teste */
+.pages {
+  background: #ffffff;
+  margin-top: 102px;
+  border-radius: 10px;
+  width: 720px;
+  /* box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px; */
+}
 
-/* button {
+.pages-texto {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.pages-texto::first-letter {
+  color: #ebd343f2;
+  font-size: 126%;
+}
+
+.pages-img {
+  height: 250px;
+}
+
+.pages-img-principal {
+  height: 460px;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  list-style-type: none;
-  margin-right: 16px;
-  align-items: center;
-  font-size: 22px;
-} */
+  margin-top: -40px;
+}
+
+.pages-texto-img img {
+  width: 250px;
+}
+
+/* fim teste */
 
 .logo {
   width: 52px;
   height: 52px;
   margin: 10px;
 }
-/* 
-header > ul > li > a {
-  text-decoration: none;
-  color: black;
-} */
-
-body {
-  /* background-color: rgba(156, 233, 166, 0.6); */
-  background-color: rgb(49 97 55 / 60%);
-  margin: auto;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;*/
-}
 
 ::-webkit-scrollbar-track {
-  border: 1px solid #000;
+  border: 1px solid #ebd343f2;
   background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -150,22 +171,7 @@ body {
   height: 150px;
 }
 
-.conteudo::first-letter {
-  color: #ebd343f2;
-  font-size: 176%;
-}
-
-/* .main {
-  background: #ffffff;
-  margin-top: 102px;
-  border-radius: 10px;
-  width: 720px;
-  box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
-}
-
-.main > article {
-  padding: 32px;
-}
+/*
 
 .sol {
   width: 212px;
@@ -175,3 +181,67 @@ body {
   width: 300px;
   height: 300px;
 } */
+
+/* teste vitoria */
+
+.pages-img {
+  height: 250px;
+}
+
+.pages-texto-img {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  grid-gap: 15px;
+}
+.pages-texto-img img {
+  width: 250px;
+}
+
+.pages-list {
+  list-style-type: "";
+}
+.pages-list li {
+  margin: 10px;
+}
+li::before {
+  content: "☀ ";
+  color: #efcc00;
+}
+
+.pages-list li a {
+  color: #efcc00;
+  text-decoration: underline wavy;
+}
+
+/* teste henrique */
+
+.aluno {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: rgb(49 97 55 / 60%); */
+}
+
+.card {
+  margin: 15px;
+  background-color: rgb(225, 225, 225);
+  color: #202020;
+  width: 220px;
+  height: 330px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  text-align: center;
+}
+
+.card > img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card > h2 {
+  font-size: 20px;
+  padding-top: 10px;
+}

@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href=".././css/style.css" />
     <script src=".././js/script.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="./imagens/ico.ico" />
     <title>Formulario - Energia solar</title>
   </head>
   <body>
     <header>
+      <img class="logo" src="./../imagens/eco-house.png" alt="" />
       <nav>
-        <img class="logo" src="./../imagens/eco-house.png" alt="" />
         <div>
           <hr id="line" style="left: 100%; opacity: 0" />
           <button
             id="BtnInicio"
             name="btn"
-            onclick="href('../home.html', 'index')"
+            onclick="href('../index.html', 'index')"
           >
             Inicio
           </button>
           <button id="BtnSobre" name="btn">
             Sobre
             <div id="ExtraSobre">
-              <a href="./sobres/sobre.html">Sobre</a>
+              <a href="./sobres/tipos.html">Tipos</a>
               <a href="./sobres/funcionamento.html">Como funciona</a>
               <a href="./sobres/beneficios.html">Beneficios</a>
             </div>
@@ -53,27 +54,47 @@
       </nav>
     </header>
     <main class="pages">
-      <h1>Formulario</h1>
-      <p class="pages-texto">
-        Texo texto texto texto texto texto texto <br />
-        texto texto texto texto texto texto texte <br />
-        texto texto texto texto texto texto
-      </p>
-      <img class="pages-img" src="../imgs/placeholder.jpg" />
-      <p class="pages-texto">
-        Texo texto texto texto texto texto texto <br />
-        texto texto texto texto texto texto texte <br />
-        texto texto texto texto texto texto
-      </p>
+      <h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap"
+          rel="stylesheet"
+        />Contato
+      </h1>
 
-      <div class="pages-texto-img">
-        <img src="../imgs/placeholder.jpg" />
+      <img class="pages-img" src="./../imagens/Fundo-Oeste-Solar-Vendas.jpg" />
+      <p class="pages-texto">
+        Para sugestões ou informações sobre empresas que atuam no seu munícipio,
+        preencha os campos abaixo e nos envie uma mensagem!
+      </p>
+      <form>
         <p>
-          Texto texto texto texto texto texto texto texto <br />
-          texto texto texto texto texto <br />
-          texto texto texto texto
+          <label
+            >Nome:
+            <input type="text" name="txtnome" size="50" maxlength="50" />
+          </label>
         </p>
-      </div>
+        <p>
+          <label
+            >Telefone:
+            <input type="tel" placeholder="(XX)XXXXX-XXXX" />
+          </label>
+        </p>
+        <p>
+          <label
+            >E-mail:
+            <input type="email" required />
+          </label>
+        </p>
+        <label>
+          Deixe sua mensagem <br />
+          <textarea name="txtMensagem" rows="6" cols="55"> </textarea></label
+        ><br />
+        <input type="submit" value="Enviar" />
+      </form>
+
+      <div class="pages-texto-img"></div>
     </main>
   </body>
 </html>
