@@ -28,12 +28,15 @@ nav {
 }
 
 nav button {
-  padding-inline: 5px;
   background-color: transparent;
-  color: inherit;
   border: none;
   border-bottom: 5px transparent solid;
+  color: inherit;
   cursor: pointer;
+  font-size: 22px;
+  list-style-type: none;
+  margin-right: 16px;
+  padding-inline: 5px;
   transition: 0.5s;
 }
 
@@ -52,11 +55,11 @@ nav hr {
   transition: 0.5s;
 }
 
-button {
+/* button {
   list-style-type: none;
   margin-right: 16px;
   font-size: 22px;
-}
+} */
 
 main {
   background: #ffffff;
@@ -123,7 +126,7 @@ main.inicio section:last-child {
   display: flex;
 }
 
-main.beneficios > article section ul {
+main > article section ul {
   padding-right: 40px;
 }
 
@@ -146,10 +149,6 @@ main.beneficios > article section ul {
   border-radius: 10px 10px 0 0;
   height: 460px;
   /* display: flex; */
-}
-
-.pages-texto-img img {
-  width: 250px;
 }
 
 /* fim teste */
@@ -247,4 +246,59 @@ li::before {
 .card > h2 {
   font-size: 20px;
   padding-top: 10px;
+}
+
+main > .imagem-principal {
+  align-content: center;
+  background-image: url(../imagens/Fundo-Oeste-Solar-Vendas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+  height: 460px;
+}
+
+.imagem-principal > div {
+  background-color: rgba(0, 0, 0, 0.375);
+  padding: 24px 0;
+}
+
+.imagem-principal > div > h1 {
+  color: #efcc00;
+  margin: 0;
+}
+
+main.bibliografia > .imagem-principal {
+  background-image: url(../videos/how-it-works.gif);
+}
+
+main.bibliografia > .imagem-principal > div > h1 {
+  color: #fff;
+  font-weight: bolder;
+}
+
+main.contato article form {
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+}
+
+main.contato article form div {
+  font-size: 20px;
+  margin-bottom: 14px;
+  display: grid;
+}
+
+main.contato article form button {
+  align-self: center;
+  padding: 8px;
+  font-weight: bold;
+  color: rgb(49 97 55 / 60%);
+  border-radius: 13px;
+  font-size: 16px;
+  border-color: rgba(160, 218, 168, 0);
+}
+
+section figure {
+  text-align: center;
+  margin-bottom: 32px;
 }

@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap"
       rel="stylesheet"
     />
-    <title>Formulario - Energia solar</title>
+    <title>Contato - Energia solar</title>
   </head>
   <body>
     <header>
@@ -36,11 +36,11 @@
             </div>
           </button>
           <button
-            id="BtnFormulario"
+            id="BtnContato"
             name="btn"
-            onclick="href('contato.html' , 'formulario')"
+            onclick="href('contato.html' , 'contato')"
           >
-            Formulário
+            Contato
           </button>
           <button
             id="BtnBibliografia"
@@ -59,44 +59,49 @@
         </div>
       </nav>
     </header>
-    <main class="formulario">
+    <main class="contato">
+      <div class="imagem-principal">
+        <div>
+          <h1>Contato</h1>
+        </div>
+      </div>
       <article>
-        <h1>Contato</h1>
-        <img
-          class="pages-img"
-          src="./../imagens/Fundo-Oeste-Solar-Vendas.jpg"
-        />
         <p class="pages-texto">
           Para sugestões ou informações sobre empresas que atuam no seu
           munícipio, preencha os campos abaixo e nos envie uma mensagem!
         </p>
         <form>
-          <p>
-            <label
-              >Nome:
-              <input type="text" name="txtnome" size="50" maxlength="50" />
-            </label>
-          </p>
-          <p>
-            <label
-              >Telefone:
-              <input type="tel" placeholder="(XX)XXXXX-XXXX" />
-            </label>
-          </p>
-          <p>
-            <label
-              >E-mail:
-              <input type="email" required />
-            </label>
-          </p>
-          <label>
-            Deixe sua mensagem <br />
-            <textarea name="txtMensagem" rows="6" cols="55"> </textarea></label
-          ><br />
-          <input type="submit" value="Enviar" />
+          <div>
+            <label for="nome">Nome</label>
+            <input
+              id="nome"
+              type="text"
+              name="txtnome"
+              size="40"
+              maxlength="50"
+            />
+          </div>
+          <div>
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="tel" placeholder="(XX) XXXXX-XXXX" />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input id="email" type="email" required />
+          </div>
+          <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              placeholder="Deixe sua mensagem..."
+              rows="6"
+              cols="55"
+            ></textarea>
+          </div>
+          <br />
+          <button type="submit">Enviar</button>
         </form>
-
-        <div class="pages-texto-img"></div>
       </article>
     </main>
   </body>
